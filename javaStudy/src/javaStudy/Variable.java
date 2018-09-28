@@ -9,6 +9,7 @@ public class Variable {
 		System.out.println("int형: " + num);
 		System.out.println("String형: " + word);
 		System.out.println("공백");
+		System.out.println("추가");
 	}
 
 }
