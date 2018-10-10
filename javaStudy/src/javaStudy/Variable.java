@@ -51,8 +51,8 @@ public class Variable {
 		str = "example";
 		System.out.println(str);
 		
-		// 처음 생성한 example 이라는 문자열은 그대로 남아있고
-		// 다시 선언한 문자열을 생성한다는 것이 불변의 속성.
+		// 처음 생성한 example 이라는 문자열은 그대로 남아있고 
+		// 다시 선언한 문자열을 생성한다는 것이 불변의 속성. 
 		// 그래서 처음에 생성한 인스턴스는 gc(가비지컬렉션)이 회수한다
 		
 		String word11 = null;
