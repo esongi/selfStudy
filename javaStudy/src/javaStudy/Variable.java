@@ -63,5 +63,7 @@ public class Variable {
 		} else {
 			System.out.println("æ∆¥‘");
 		}
+		
+		System.out.println("»Æ¿Œ");
 	}
 }
