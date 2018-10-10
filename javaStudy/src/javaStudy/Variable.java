@@ -64,6 +64,6 @@ public class Variable {
 			System.out.println("아님");
 		}
 		
-		System.out.println("확인");
+		System.out.println("확인 ");
 	}
 }
