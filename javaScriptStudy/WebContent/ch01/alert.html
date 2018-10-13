@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>alert</title>
+</head>
+<body>
+	<p>다음 버튼을 눌러보세요</p>
+	<input type="button" value="요기요" onClick="btnClick()">
+	<p>다른 버튼</p>
+	<input type="button" value="진위형" onClick="btnConfirm()">
+	<script>
+		// 사용자로부터 입력을 받을 때는 prompt(msg, defaultText)
+		// 예,아니오 진위형 질문 confirm(message)
+		// 실제프로젝트에서는 대화상자 관련 메서드가 거의 사용되지 않는다
+		// 대화상자는 브라우저를 블록하여 실행을 중단하는 특성이 있고 사용자는 수시로 창을 열어 재끼는 사이트를 별로 좋아하지 않는다
+
+		function btnClick() {
+			alert("참 잘했어요\n확인 버튼을 누르세요");
+		}
+
+		function btnConfirm() {
+			var upload = confirm("업로드하시겠습니까");
+			if (upload) {
+				document.write("업로드를 완료했습니다");
+			} else {
+				document.write("업로드를 취소했습니다");
+			}
+		}
+	</script>
+</body>
+</html>

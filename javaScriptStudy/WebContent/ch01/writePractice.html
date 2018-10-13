@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>writePractice</title>
+</head>
+<body>
+	<p>버튼을 눌러 보세요</p>
+	<input type="button" value="여기요" onClick="btnClick()">
+	<p>===========</p>
+	<script type="text/javascript">
+		/* 
+		writeln 메서드는 개행 코드를 실제로 출력하지만 웹 브라우저가 HTML 문서의 개행 코드를 무시하기 때문
+		HTML 문서에서 물리적인 개행 코드는 아무리 많아도 공백 하나와 같을뿐.
+		문자열 중간에 \n 확장열을 넣어 개행해도 실제 개행은 되지 않는다
+		스크립트가 출력하는 문서는 결국 HTML이며 웹 브라우저는 HTML 방식대로 문서를 출력
+		스크립트를 <pre> 태그로 감싸는 방법. <pre> 태그안에서는 공백이나 개행 코드가 그대로 유지.그러나 번거롭다
+		HTML 문서가 요구하는대로 개행할 때는 <br> 태그를 사용하는 것이 좋다. 
+		문서가 로드되기 전의 출력은 새 문서에 누적적으로 출력된다. 그러나 문서가 다 로드되어 화면에 표시된 상태에서
+		write 메서드는 새로운 출력을 문서 뒤에 누적시키는 것이 아니라 문서 전체를 다 지우고 새로 출력한다.
+		만약 기존 내용을 유지한 채 버튼 아래쪽에 새로운 문자열을 출력하고 싶다면 DOM 관련 메서드로 새 문단을 만들어
+		추가하는 복잡한 코드를 사용해야 한다. write 메서드는 실제 프로젝트에서 결과 출력용으로 거의 사용되지 않는다.
+		*/
+
+		function btnClick() {
+			document.write("참 잘했어요");
+		}
+
+		document.write("토끼");
+		document.write("거북이");
+
+		document.write("<hr>");
+
+		document.writeln("토끼");
+		document.writeln("거북이");
+
+		document.write("<hr>");
+
+		document.write("토끼<br>");
+		document.write("거북이");
+	</script>
+</body>
+</html>

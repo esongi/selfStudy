@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 웹 페이지가 마치 응용 프로그램처럼 사용자의 명령에 반응을 보인다
+	function changeCaption(cap) {
+		document.getElementById("fruit").innerText = cap;
+	}
+
+	// 입력 대화상자에서 취소 버튼을 누르면 null이 리턴되므로 원칙적으로는
+	// who에 값이 제대로 저장되었는지 if문으로 점검해 보아야 한다
+	function sayHello() {
+		var who = null;
+		who = prompt("이름을 알려 주세요");
+
+		if (who != null) {
+			alert(who + "씨 안녕하세요");
+		} else {
+			alert("취소되었습니다");
+		}
+
+	}
+</script>
+</head>
+<body>
+	<h1 id="para1">나는 바보다</h1>
+	<h1 id="para2" style="color: red;">빨간색이다</h1>
+	<h1 id="fruit"></h1>
+	<form>
+		<input type="button" value="Apple" onClick="changeCaption('Apple')">
+		<input type="button" value="Orange" onClick="changeCaption('Orange')">
+	</form>
+	<p>버튼을 눌러 보세요</p>
+	<form>
+		<input type="button" value="Button" onClick="sayHello()">
+	</form>
+	<script type="text/javascript">
+		// getElementById 메서드는 특정한 id를 가지는 태그를 찾는다
+		// 대상 태그를 찾은 후 innerText 속성에 값을 대입함으로서 내용을 바꾸었다
+		document.getElementById("para1").innerText = "나는 천재다";
+		document.getElementById("para2").style.color = "blue";
+	</script>
+
+
+</body>
+</html>

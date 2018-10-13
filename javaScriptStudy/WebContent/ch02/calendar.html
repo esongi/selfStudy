@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery UI Datepicker - Default functionality</title>
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<p>
+		Date: <input type="text" id="datepicker">
+	</p>
+
+	년도:
+	<label id="year"></label>
+	<br> 월:
+	<label id="month"></label>
+	<br> 일:
+	<label id="day"></label>
+	<br> 요일:
+	<label id="dayweek"></label>
+	<br> 기간:
+	<label id="toDate"></label>
+	<br>
+
+	<script>
+		var plusDate = 31;
+		$(function() {
+
+			$("#datepicker").datepicker(
+					{
+						showButtonPanel : false,
+						numberOfMonths : 2,
+						minDate : 0,
+						gotoCurrent : false,
+						dateFormat : 'yy/mm/dd',
+						monthNames : [ '1월', '2월', '3월', '4월', '5월', '6월',
+								'7월', '8월', '9월', '10월', '11월', '12월' ],
+						monthNamesShort : [ '1월', '2월', '3월', '4월', '5월', '6월',
+								'7월', '8월', '9월', '10월', '11월', '12월' ],
+						dayNames : [ '일', '월', '화', '수', '목', '금', '토' ],
+						dayNamesShort : [ '일', '월', '화', '수', '목', '금', '토' ],
+						dayNamesMin : [ '일', '월', '화', '수', '목', '금', '토' ],
+						yearSuffix : '년',
+
+						onSelect : function(selectedDate) {
+
+							var arrDate = selectedDate.split("/"); //배열
+
+							$("#year").text(arrDate[0]);
+							$("#month").text(arrDate[1]);
+							$("#day").text(arrDate[2]);
+
+							var date = new Date($("#datepicker").datepicker({
+								dateFormat : 'yy/mm/dd'
+							}).val());
+
+							var week = new Array("일", "월", "화", "수", "목", "금",
+									"토");
+							$("#dayweek").text(week[date.getDay()]);
+
+							var lastDate = $(this).datepicker('getDate');
+							lastDate.setDate(lastDate.getDate() + plusDate);
+							$("#toDate").text(selectedDate + "~" + lastDate);
+
+							//$("#datepicker").datepicker("option", "mindate", selectedDate);
+
+						}
+
+					});
+		});
+	</script>
+</body>
+</html>

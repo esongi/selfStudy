@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>varCheck</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 12;
+		var b = "korea";
+		document.write("a = " + a);
+		document.write("<br>");
+		document.write("b = " + b);
+		document.write("<br>");
+
+		// 텍스트 변경
+		b = "change";
+		document.write(b);
+		document.write("<br>");
+
+		// 숫자로 변경
+		b = a;
+		document.write(b);
+		document.write("<br>");
+
+		// 숫자 + 문자열 >> 문자열
+		b = b + "숫자";
+		document.write(b);
+	</script>
+</body>
+</html>

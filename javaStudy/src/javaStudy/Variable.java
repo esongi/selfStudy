@@ -3,9 +3,6 @@ package javaStudy;
 public class Variable {
 
 	public static void main(String[] args) {
-		int num1 = 10;
-		int num2 = 10;
-
 		Integer num3 = new Integer(10);
 		Integer num4 = new Integer(10);
 
