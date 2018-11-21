@@ -3,15 +3,18 @@ package javaStudy.method;
 public class ObjectMethod {
 
 	public static void main(String[] args) {
-		System.out.println("what is this?");
-		System.out.println(args);
-		System.out.println(args.length);
+		Object intObj = 1234;
+		Integer intInteger = 1234;
+		int intTemp = 1234;
 
-		String temp = "something";
-		System.out.println(temp);
-		System.out.println(args.length);
-		System.out.println(args.hashCode());
+		System.out.println("오브젝트와 래퍼 값은 :" + intObj.equals(intInteger));
+		System.out.println("본질은: " + (intObj == intInteger));
 
+		System.out.println("래퍼클래스와 기본형 값은 :" + intInteger.equals(intTemp));
+		System.out.println("본질은: " + (intInteger == intTemp));
+
+		System.out.println("getSimpleName메서드: " + intObj.getClass().getSimpleName());
+		Object arrayObj = new int[3];
+		System.out.println("isArray 메서드는 배열인지 확인: " + arrayObj.getClass().isArray());
 	}
-
 }
