@@ -3,6 +3,7 @@ package javaStudy.example;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Random;
 
 public class MyLotto {
 
@@ -22,17 +23,23 @@ public class MyLotto {
 
 		System.out.println("리스트 로또 : " + lottoList);
 
-		int[] arrayLotto = new int[6];
+		int[] arrayLotto = new int[6]; // int형 배열 선언
+		Random random = new Random(); // 객체생성
 
-		// 수정해야 함, 중복o
-		for (int i = 0; i < 6; i++) {
-			int randomNum = (int) (Math.random() * 45);
+		// 숫자 6개를 뽑기위한 for문
+		for (int i = 0; i <= 5; i++) {
 
-			arrayLotto[i] = randomNum;
+			// 1~10숫자중 랜덤으로 하나를 뽑아 a[0]~a[5]에 저장
+			arrayLotto[i] = random.nextInt(45) + 1;
+
+			// 중복제거를 위한 for문
+			for (int j = 0; j < i; j++) {
+
+				if (arrayLotto[i] == arrayLotto[j]) {
+					i--;
+				}
+			}
 		}
-
-		System.out.println(Arrays.toString(arrayLotto));
-
+		System.out.println("배열 로또 : " + Arrays.toString(arrayLotto));
 	}
-
 }
