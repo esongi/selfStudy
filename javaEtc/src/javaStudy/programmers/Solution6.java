@@ -25,6 +25,6 @@ public class Solution6 {
 
 	public static void main(String[] args) {
 		Solution6 solution6 = new Solution6();
-		System.out.println(solution6.solution("abcdef"));
+		System.out.println(solution6.solution("abcdf"));
 	}
 }
