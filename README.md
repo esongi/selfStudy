@@ -1,4 +1,2 @@
-# selfStudy
-# 어케되나
-only for study
-<p>asdf</p> 
+# 오늘도 언제나 코딩 후 커밋중입니다!
+
