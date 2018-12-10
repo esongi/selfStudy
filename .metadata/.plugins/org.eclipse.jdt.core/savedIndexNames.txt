@@ -1,2 +1,0 @@
-INDEX VERSION 1.131+C:\workpace\giUpload\.metadata\.plugins\org.eclipse.jdt.core
-2541006982.index
