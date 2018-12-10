@@ -1,0 +1,13 @@
+package javaStudy.method;
+
+public class Test {
+
+	public static void main(String[] args) {
+		String[] participant = {"marina", "josipa", "nikola", "vinko", "filipa"};
+		String[] completion = {"marina", "josipa", "nikola", "filipa"};
+
+		Solution tempSolution = new Solution();
+		System.out.println(tempSolution.solution(participant, completion));
+	}
+
+}

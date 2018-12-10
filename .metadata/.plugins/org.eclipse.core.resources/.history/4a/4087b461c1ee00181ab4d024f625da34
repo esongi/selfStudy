@@ -1,0 +1,28 @@
+package javaStudy.example;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class MyLotto {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> lottoNum = new ArrayList<Integer>();
+
+		for (int i = 1; i <= 45; i++) {
+			lottoNum.add(i);
+		}
+		System.out.println(lottoNum);
+
+		Collections.shuffle(lottoNum);
+
+		for (int i = 1; i <= 6; i++) {
+			System.out.println(lottoNum.get(i));
+		}
+
+		ArrayList<Integer> tempNum = new ArrayList<Integer>();
+		for (int i = 1; i <= 6; i++) {
+			tempNum.add(lottoNum.get(i));
+		}
+	}
+
+}

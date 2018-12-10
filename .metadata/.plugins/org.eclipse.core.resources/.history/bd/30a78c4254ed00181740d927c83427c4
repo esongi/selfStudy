@@ -1,0 +1,10 @@
+package javaStudy.method;
+
+public class ObjectMethod {
+
+	public static void main(String[] args) {
+		Object intObj = 1234;
+		System.out.println(intObj);
+	}
+
+}

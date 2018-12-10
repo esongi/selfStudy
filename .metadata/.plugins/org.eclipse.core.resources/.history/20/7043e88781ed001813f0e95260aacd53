@@ -1,0 +1,8 @@
+package javaStudy.method;
+
+public class Solution3 {
+	public int solution(int n) {
+		int answer = 0;
+		return answer;
+	}
+}

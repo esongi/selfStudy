@@ -1,0 +1,11 @@
+package javaStudy.practice;
+
+public class ArrayList {
+
+	private int size = 0;
+	private Object[] elementData = new Object[100];
+	
+	public boolean addLast(Object object) {
+		ele
+	}
+}

@@ -1,0 +1,13 @@
+package javaStudy.example;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MyLotto {
+
+	public static void main(String[] args) {
+		int[] lottoNum = { 1, 2, 3, 4 };
+		Arrays arrays = new ArrayList();
+	}
+
+}

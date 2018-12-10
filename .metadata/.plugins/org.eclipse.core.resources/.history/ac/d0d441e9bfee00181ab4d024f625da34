@@ -1,0 +1,12 @@
+package javaStudy.example;
+
+import java.util.Collections;
+
+public class MyLotto {
+
+	public static void main(String[] args) {
+		int[] lottoNum = { 1, 2, 3, 4 };
+		Collections.shuffle(lottoNum);
+	}
+
+}

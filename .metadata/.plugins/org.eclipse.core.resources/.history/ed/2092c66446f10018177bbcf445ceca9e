@@ -1,0 +1,8 @@
+package javaStudy.practice;
+
+public class ArrayList {
+
+	private int size = 0;
+	private Object[] elemenetData = new Object[100];
+
+}

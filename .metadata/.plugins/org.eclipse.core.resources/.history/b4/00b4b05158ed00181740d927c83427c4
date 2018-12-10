@@ -1,0 +1,13 @@
+package javaStudy.method;
+
+public class ObjectMethod {
+
+	public static void main(String[] args) {
+		Object intObj = 1234;
+		int intTemp = 1234;
+
+		System.out.println(intObj.equals(intTemp));
+		System.out.println((intObj == intTemp));
+	}
+
+}

@@ -1,0 +1,10 @@
+package javaStudy.method;
+
+public class Solution2 {
+	public int solution(String s) {
+		int answer = 0;
+		System.out.println(s.valueOf(1234));
+
+		return answer;
+	}
+}

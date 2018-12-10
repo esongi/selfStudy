@@ -1,0 +1,19 @@
+package javaStudy.method;
+
+public class ObjectMethod {
+
+	public static void main(String[] args) {
+		Object intObj = 1234;
+		Integer intInteger = 1234;
+		int intTemp = 1234;
+  
+		System.out.println("값은 :" + intObj.equals(intInteger));
+		if (intObj == intInteger) {
+			System.out.println("??");
+		} else {
+			System.out.println("본질이 달러");
+		}
+		System.out.println(intObj == intInteger);
+	}
+
+}

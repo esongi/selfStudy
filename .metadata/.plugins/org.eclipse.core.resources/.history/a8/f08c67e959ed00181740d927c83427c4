@@ -1,0 +1,16 @@
+package javaStudy.method;
+
+public class ObjectMethod {
+
+	public static void main(String[] args) {
+		Object intObj = 1234;
+		Integer intInteger = 1234;
+		int intTemp = 1234;
+
+		System.out.println(intObj.equals(intTemp));
+		if (intObj == intInteger) {
+			System.out.println("값이 같음?");
+		}
+	}
+
+}

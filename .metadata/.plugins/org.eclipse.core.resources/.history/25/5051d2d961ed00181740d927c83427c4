@@ -1,0 +1,14 @@
+package javaStudy.method;
+
+public class Test {
+
+	public static void main(String[] args) {
+		String[] participant = { "강남", "다람쥐", "박태규" };
+		String[] completion = { "강남", "박태규" };
+		
+		Solution tempSolution = new Solution();
+		System.out.println(tempSolution.solution(participant, completion));
+		
+	}
+
+}

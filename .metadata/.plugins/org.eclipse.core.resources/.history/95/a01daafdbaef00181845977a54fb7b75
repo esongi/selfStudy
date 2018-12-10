@@ -1,0 +1,23 @@
+package javaStudy.programmers;
+
+public class Solution5 {
+
+	public String solution(int num) {
+		String answer = "";
+
+		if (num % 2 == 0) {
+			answer = "짝수";
+		} else {
+			answert = "홀수";
+		}
+		// 짝수 Even, 홀수 Odd
+
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		Solution5 solution5 = new Solution5();
+		solution5.solution(5);
+	}
+
+}

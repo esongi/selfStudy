@@ -1,0 +1,20 @@
+package javaStudy.programmers;
+
+public class Solution5 {
+
+	public String solution(int num) {
+		String answer = "";
+		
+		// 짝수 Even, 홀수 Odd
+		
+		
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Solution4 solution4 = new Solution4();
+		solution4.so
+	}
+
+}
