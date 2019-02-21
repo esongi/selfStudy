@@ -7,7 +7,7 @@ class Exercise6_20 {
 
 		for (int i = 1; i < len - 1; i++) {
 			for (int j = 0; j < len - i; j++) {
-				System.out.println(j + " °ú " + (j + 1) + " À» ºñ±³");
+				System.out.println(j + " ï¿½ï¿½ " + (j + 1) + " ï¿½ï¿½ ï¿½ï¿½");
 
 				if (arr[j] > arr[j + 1]) {
 					int temp = arr[j + 1];
@@ -15,11 +15,11 @@ class Exercise6_20 {
 					arr[j] = temp;
 
 				}
-				System.out.println((i) + "¹øÂ°:" + java.util.Arrays.toString(arr));
+				System.out.println((i) + "ï¿½ï¿½Â°:" + java.util.Arrays.toString(arr));
 			}
 		}
 
-		// ¹è¿­·Î ¸®ÅÏ
+		// ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		return arr;
 	}
 
@@ -28,6 +28,6 @@ class Exercise6_20 {
 		System.out.println(java.util.Arrays.toString(original));
 
 		int[] result = shuffle(original);
-		System.out.println("´ä: " + java.util.Arrays.toString(result));
+		System.out.println("ï¿½ï¿½: " + java.util.Arrays.toString(result));
 	}
 }
